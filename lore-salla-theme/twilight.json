@@ -1,0 +1,80 @@
+{
+  "name": {
+    "en": "LORE",
+    "ar": "لور"
+  },
+  "description": {
+    "en": "A premium cinematic Salla theme for phone cases and stickers.",
+    "ar": "قالب سلة أنيق بطابع سينمائي لأغطية الجوال والستيكرات."
+  },
+  "version": "1.0.0",
+  "author": {
+    "name": "Reema AlFawaz",
+    "email": "hello@example.com"
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "announcement_text",
+      "label": {
+        "en": "Announcement text",
+        "ar": "نص شريط الإعلان"
+      },
+      "value": {
+        "en": "Free shipping on orders over 250 SAR • Premiere Night collection now live",
+        "ar": "شحن مجاني للطلبات فوق 250 ريال • مجموعة Premiere Night متاحة الآن"
+      }
+    },
+    {
+      "type": "text",
+      "id": "hero_title",
+      "label": {
+        "en": "Hero title",
+        "ar": "عنوان الواجهة"
+      },
+      "value": {
+        "en": "Phone cases & stickers inspired by the stories you love.",
+        "ar": "أغطية جوال وستيكرات مستوحاة من القصص التي تحبينها."
+      }
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": {
+        "en": "Accent color",
+        "ar": "اللون الأساسي"
+      },
+      "value": "#4A235D"
+    },
+    {
+      "type": "color",
+      "id": "surface_color",
+      "label": {
+        "en": "Surface color",
+        "ar": "لون الخلفيات"
+      },
+      "value": "#F7F0E8"
+    },
+    {
+      "type": "image",
+      "id": "brand_mark",
+      "label": {
+        "en": "Brand mark",
+        "ar": "شعار العلامة"
+      }
+    },
+    {
+      "type": "text",
+      "id": "newsletter_title",
+      "label": {
+        "en": "Newsletter title",
+        "ar": "عنوان النشرة البريدية"
+      },
+      "value": {
+        "en": "Early access to new drops, curated edits, and story-led releases.",
+        "ar": "دخول مبكر للإصدارات الجديدة والتنسيقات المختارة والإطلاقات المستوحاة من القصص."
+      }
+    }
+  ],
+  "features": []
+}

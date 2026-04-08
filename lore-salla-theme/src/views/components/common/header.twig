@@ -1,0 +1,27 @@
+<div class="lore-announcement">
+  {{ theme.settings.get('announcement_text') ?: 'Free shipping on orders over 250 SAR • Premiere Night collection now live' }}
+</div>
+<header class="lore-header">
+  <div class="lore-container lore-header__inner">
+    <nav class="lore-nav">
+      <a href="/">{{ trans('lore.home') ?: 'Home' }}</a>
+      <a href="/products">{{ trans('lore.shop') ?: 'Shop' }}</a>
+      <a href="/page/about">{{ trans('lore.about') ?: 'About' }}</a>
+      <a href="/contact-us">{{ trans('lore.contact') ?: 'Contact' }}</a>
+    </nav>
+
+    <a href="/" aria-label="LORE home">
+      {% if theme.settings.get('brand_mark') %}
+        <img class="lore-wordmark" src="{{ theme.settings.get('brand_mark') }}" alt="{{ store.name ?: 'LORE' }}">
+      {% else %}
+        <img class="lore-wordmark" src="{{ 'images/lore-wordmark.svg' | asset }}" alt="{{ store.name ?: 'LORE' }}">
+      {% endif %}
+    </a>
+
+    <div class="lore-actions">
+      <a class="lore-icon-button" href="/search" aria-label="Search">⌕</a>
+      <a class="lore-icon-button" href="/wishlist" aria-label="Wishlist">♡</a>
+      <a class="lore-icon-button" href="/cart" aria-label="Cart">👜</a>
+    </div>
+  </div>
+</header>

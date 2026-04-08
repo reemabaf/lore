@@ -1,0 +1,20 @@
+<article class="lore-product-card">
+  <div class="lore-card-media">
+    {% if product.images and product.images|length %}
+      <img src="{{ product.images[0].url ?: product.images[0] }}" alt="{{ product.name }}">
+    {% else %}
+      <img src="{{ 'images/product-midnight-reel.svg' | asset }}" alt="{{ product.name ?: 'LORE product' }}">
+    {% endif %}
+  </div>
+  <div class="lore-card-body">
+    <div class="lore-meta">
+      <span>{{ product.brand.name ?: product.promotion_title ?: 'LORE' }}</span>
+      <span class="lore-price">{{ product.price_formatted ?: product.price ?: '' }}</span>
+    </div>
+    <h3 class="lore-card-title" style="font-size: 28px; margin-top: 14px;">
+      <a href="{{ product.url ?: product.urls.customer ?: '#' }}">{{ product.name }}</a>
+    </h3>
+    <p class="lore-card-copy">{{ product.subtitle ?: product.description|striptags|slice(0, 120) }}</p>
+    <span class="lore-badge">{{ product.type ?: 'Product' }}</span>
+  </div>
+</article>

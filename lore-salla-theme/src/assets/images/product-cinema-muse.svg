@@ -1,0 +1,7 @@
+<svg width="800" height="900" viewBox="0 0 800 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="900" fill="#F9F4EE"/>
+  <rect x="165" y="110" width="470" height="680" rx="50" fill="#E9DDD2"/>
+  <rect x="205" y="150" width="390" height="600" rx="34" fill="#FFFDF9"/>
+  <path d="M255 250C340 185 460 185 545 250V660H255V250Z" fill="#4A235D"/>
+  <text x="400" y="720" text-anchor="middle" fill="#4A235D" font-size="52" font-family="Georgia, serif">Cinema Muse</text>
+</svg>

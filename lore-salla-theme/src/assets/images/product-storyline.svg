@@ -1,0 +1,10 @@
+<svg width="800" height="900" viewBox="0 0 800 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="900" fill="#FFF9F3"/>
+  <rect x="110" y="150" width="580" height="600" rx="40" fill="#F0E4D8"/>
+  <path d="M190 240H610" stroke="#4A235D" stroke-width="16" stroke-linecap="round"/>
+  <path d="M190 315H610" stroke="#4A235D" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="260" cy="520" r="74" fill="#4A235D"/>
+  <circle cx="400" cy="520" r="74" fill="#EBC7B0"/>
+  <circle cx="540" cy="520" r="74" fill="#FFFDF9"/>
+  <text x="400" y="685" text-anchor="middle" fill="#4A235D" font-size="48" font-family="Georgia, serif">Storyline</text>
+</svg>

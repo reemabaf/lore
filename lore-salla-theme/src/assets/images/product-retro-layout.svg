@@ -1,0 +1,8 @@
+<svg width="800" height="900" viewBox="0 0 800 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="900" fill="#FFF8F2"/>
+  <rect x="140" y="130" width="520" height="170" rx="28" fill="#4A235D"/>
+  <rect x="140" y="335" width="250" height="250" rx="30" fill="#EBC7B0"/>
+  <rect x="410" y="335" width="250" height="250" rx="30" fill="#F2E7DB"/>
+  <rect x="140" y="610" width="520" height="120" rx="30" fill="#F2E7DB"/>
+  <text x="400" y="235" text-anchor="middle" fill="#FFF8F2" font-size="42" font-family="Georgia, serif">Sticker Storyboard</text>
+</svg>
