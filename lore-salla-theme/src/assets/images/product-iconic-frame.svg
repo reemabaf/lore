@@ -1,7 +1,0 @@
-<svg width="800" height="900" viewBox="0 0 800 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="900" fill="#F6F0E8"/>
-  <rect x="165" y="105" width="470" height="690" rx="52" fill="#4A235D"/>
-  <rect x="215" y="155" width="370" height="590" rx="28" fill="#FFFDF9"/>
-  <rect x="258" y="220" width="284" height="460" rx="10" stroke="#4A235D" stroke-width="14"/>
-  <text x="400" y="748" text-anchor="middle" fill="#FFFDF9" font-size="46" font-family="Georgia, serif">Iconic Frame</text>
-</svg>

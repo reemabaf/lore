@@ -1,7 +1,0 @@
-<svg width="800" height="900" viewBox="0 0 800 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="900" fill="#FFFDF9"/>
-  <rect x="150" y="150" width="500" height="600" rx="34" fill="#F4E8DE"/>
-  <circle cx="400" cy="360" r="120" fill="#4A235D"/>
-  <circle cx="400" cy="360" r="78" fill="#F7F0E8"/>
-  <text x="400" y="620" text-anchor="middle" fill="#4A235D" font-size="48" font-family="Georgia, serif">Muse</text>
-</svg>

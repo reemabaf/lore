@@ -1,9 +1,0 @@
-<svg width="800" height="920" viewBox="0 0 800 920" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="920" fill="#F7F0E8"/>
-  <rect x="110" y="120" width="580" height="680" rx="40" fill="#FFFDF9"/>
-  <circle cx="400" cy="330" r="120" fill="#4A235D"/>
-  <circle cx="400" cy="330" r="72" fill="#F7F0E8"/>
-  <path d="M220 580H580" stroke="#4A235D" stroke-width="16" stroke-linecap="round"/>
-  <path d="M220 640H520" stroke="#4A235D" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
-  <text x="400" y="740" text-anchor="middle" fill="#4A235D" font-size="54" font-family="Georgia, serif">LORE</text>
-</svg>
