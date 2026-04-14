@@ -1,0 +1,564 @@
+:root {
+  --lore-accent: #4a235d;
+  --lore-accent-soft: #73498b;
+  --lore-ink: #141116;
+  --lore-cream: #f7f0e8;
+  --lore-mist: #f4f1ec;
+  --lore-line: #e5d8cb;
+  --lore-stone: #7d746f;
+  --lore-white: #fffdfa;
+  --lore-shadow: 0 22px 60px rgba(45, 25, 54, 0.1);
+  --lore-radius-xl: 32px;
+  --lore-radius-lg: 24px;
+  --lore-radius-md: 18px;
+  --container: 1200px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
+  color: var(--lore-ink);
+  background:
+    radial-gradient(circle at top, rgba(115, 73, 138, 0.08), transparent 26%),
+    linear-gradient(180deg, #fffdf9 0%, #f7f1ea 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.lore-container {
+  width: min(var(--container), calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.lore-section {
+  padding: 72px 0 0;
+}
+
+.lore-surface {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(229, 216, 203, 0.8);
+  border-radius: var(--lore-radius-xl);
+  box-shadow: var(--lore-shadow);
+  backdrop-filter: blur(12px);
+}
+
+.lore-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 22px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: 0.25s ease;
+}
+
+.lore-pill--primary {
+  background: var(--lore-accent);
+  color: #fff;
+}
+
+.lore-pill--primary:hover {
+  background: var(--lore-accent-soft);
+  transform: translateY(-1px);
+}
+
+.lore-pill--secondary {
+  border: 1px solid var(--lore-line);
+  background: #fff;
+  color: var(--lore-ink);
+}
+
+.lore-pill--secondary:hover {
+  border-color: var(--lore-accent);
+  color: var(--lore-accent);
+}
+
+.lore-announcement {
+  background: var(--lore-accent);
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  padding: 10px 16px;
+}
+
+.lore-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(255, 253, 250, 0.9);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(229, 216, 203, 0.7);
+}
+
+.lore-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 82px;
+}
+
+.lore-wordmark {
+  width: 170px;
+}
+
+.lore-nav,
+.lore-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.lore-nav a,
+.lore-footer a {
+  transition: color 0.2s ease;
+}
+
+.lore-nav a:hover,
+.lore-footer a:hover {
+  color: var(--lore-accent);
+}
+
+.lore-icon-button {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--lore-line);
+  border-radius: 999px;
+  background: #fff;
+}
+
+.lore-icon-button:hover {
+  color: var(--lore-accent);
+  border-color: var(--lore-accent);
+}
+
+.lore-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  padding: 56px;
+  background:
+    radial-gradient(circle at top left, rgba(103, 60, 126, 0.18), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(241, 201, 163, 0.2), transparent 24%),
+    rgba(255, 255, 255, 0.88);
+}
+
+.lore-eyebrow {
+  margin: 0;
+  color: var(--lore-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.34em;
+  font-size: 11px;
+}
+
+.lore-title,
+.lore-section-title,
+.lore-card-title,
+.lore-product-title {
+  margin: 0;
+  font-family: "Iowan Old Style", "Baskerville", "Times New Roman", serif;
+  letter-spacing: -0.04em;
+}
+
+.lore-title {
+  font-size: clamp(48px, 8vw, 82px);
+  line-height: 0.95;
+}
+
+.lore-title span {
+  display: block;
+  margin-top: 14px;
+  font-size: clamp(24px, 4vw, 34px);
+  line-height: 1.35;
+  color: var(--lore-stone);
+}
+
+.lore-copy,
+.lore-section-copy,
+.lore-card-copy {
+  color: var(--lore-stone);
+  line-height: 1.9;
+}
+
+.lore-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.lore-feature-card,
+.lore-collection,
+.lore-product-card,
+.lore-review,
+.lore-mini-card,
+.lore-promo,
+.lore-newsletter,
+.lore-contact-card {
+  border: 1px solid rgba(229, 216, 203, 0.75);
+  border-radius: var(--lore-radius-lg);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--lore-shadow);
+}
+
+.lore-feature-card,
+.lore-mini-card,
+.lore-promo,
+.lore-review,
+.lore-contact-card {
+  padding: 28px;
+}
+
+.lore-feature-card {
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lore-feature-card--dark {
+  background: var(--lore-accent);
+  color: #fff;
+}
+
+.lore-grid-3,
+.lore-grid-4,
+.lore-grid-2 {
+  display: grid;
+  gap: 24px;
+}
+
+.lore-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.lore-grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.lore-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lore-section-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.lore-section-title {
+  font-size: clamp(32px, 4vw, 44px);
+}
+
+.lore-card-media {
+  overflow: hidden;
+  border-radius: var(--lore-radius-lg) var(--lore-radius-lg) 0 0;
+  background: var(--lore-mist);
+}
+
+.lore-card-media img {
+  width: 100%;
+  aspect-ratio: 4 / 3.4;
+  object-fit: cover;
+}
+
+.lore-card-body {
+  padding: 22px;
+}
+
+.lore-product-card {
+  overflow: hidden;
+}
+
+.lore-product-card .lore-card-media img {
+  aspect-ratio: 4 / 4.5;
+}
+
+.lore-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--lore-stone);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.lore-price {
+  font-weight: 600;
+  color: var(--lore-ink);
+}
+
+.lore-badge {
+  display: inline-flex;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: var(--lore-cream);
+  font-size: 11px;
+  color: var(--lore-stone);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.lore-gallery img {
+  border-radius: var(--lore-radius-lg);
+  background: var(--lore-mist);
+  border: 1px solid rgba(229, 216, 203, 0.75);
+}
+
+.lore-shop-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+}
+
+.lore-sidebar,
+.lore-product-panel {
+  padding: 24px;
+}
+
+.lore-filter-group + .lore-filter-group {
+  margin-top: 24px;
+}
+
+.lore-filter-group h3 {
+  margin: 0 0 14px;
+  color: var(--lore-stone);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.lore-filter-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: var(--lore-ink);
+}
+
+.lore-product-layout {
+  display: grid;
+  grid-template-columns: 1fr 0.92fr;
+  gap: 32px;
+}
+
+.lore-product-info {
+  padding: 32px;
+}
+
+.lore-product-title {
+  font-size: clamp(34px, 4vw, 52px);
+}
+
+.lore-product-price {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 14px 0 0;
+}
+
+.lore-form-control {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 18px;
+  border: 1px solid var(--lore-line);
+  border-radius: 999px;
+  background: #fff;
+}
+
+.lore-form-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lore-form-grid .lore-form-control,
+.lore-form-grid textarea {
+  width: 100%;
+}
+
+.lore-form-grid textarea {
+  min-height: 160px;
+  padding: 16px 18px;
+  border: 1px solid var(--lore-line);
+  border-radius: 24px;
+  resize: vertical;
+}
+
+.lore-newsletter {
+  padding: 36px;
+  background: var(--lore-accent);
+  color: #fff;
+}
+
+.lore-newsletter .lore-copy {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.lore-newsletter form {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.lore-newsletter input {
+  flex: 1;
+  min-height: 52px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 999px;
+}
+
+.lore-newsletter button {
+  border: 0;
+  cursor: pointer;
+}
+
+.lore-footer {
+  margin-top: 90px;
+  border-top: 1px solid rgba(229, 216, 203, 0.8);
+  background: rgba(255, 255, 255, 0.84);
+}
+
+.lore-footer__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 32px;
+  padding: 52px 0;
+}
+
+.lore-footer__bottom {
+  border-top: 1px solid rgba(229, 216, 203, 0.8);
+  padding: 18px 0 24px;
+  color: var(--lore-stone);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.lore-list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lore-gallery-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.lore-gallery-strip img {
+  border-radius: var(--lore-radius-lg);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.lore-empty-state {
+  padding: 34px;
+  text-align: center;
+  color: var(--lore-stone);
+}
+
+@media (max-width: 1024px) {
+  .lore-hero,
+  .lore-product-layout,
+  .lore-shop-layout,
+  .lore-footer__grid,
+  .lore-grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .lore-grid-3,
+  .lore-grid-2,
+  .lore-gallery-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lore-hero-grid,
+  .lore-newsletter form {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .lore-section-header,
+  .lore-footer__bottom {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width: 700px) {
+  .lore-container {
+    width: min(var(--container), calc(100% - 20px));
+  }
+
+  .lore-header__inner,
+  .lore-nav,
+  .lore-actions,
+  .lore-form-grid,
+  .lore-grid-3,
+  .lore-grid-2,
+  .lore-gallery-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .lore-header__inner {
+    min-height: auto;
+    padding: 16px 0;
+    flex-direction: column;
+  }
+
+  .lore-nav,
+  .lore-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .lore-hero {
+    padding: 28px 22px;
+  }
+
+  .lore-section {
+    padding-top: 56px;
+  }
+}

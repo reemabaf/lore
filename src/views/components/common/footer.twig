@@ -1,0 +1,41 @@
+<footer class="lore-footer">
+  <div class="lore-container lore-footer__grid">
+    <div>
+      <p class="lore-eyebrow">{{ store.name ?: 'LORE' }}</p>
+      <h2 class="lore-section-title" style="margin-top: 12px;">Accessories inspired by the stories that stay with you.</h2>
+      <p class="lore-copy">Premium phone cases and collectible stickers made for design-led fans of film, television, and visual culture.</p>
+    </div>
+
+    <div>
+      <p class="lore-eyebrow" style="color: var(--lore-stone);">Shop</p>
+      <ul class="lore-list-reset lore-copy">
+        <li><a href="/products">Phone Cases</a></li>
+        <li><a href="/products">Stickers</a></li>
+        <li><a href="/products?sort=latest">New Arrivals</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="lore-eyebrow" style="color: var(--lore-stone);">Company</p>
+      <ul class="lore-list-reset lore-copy">
+        <li><a href="/page/about">About</a></li>
+        <li><a href="/contact-us">Contact</a></li>
+        <li><a href="/pages/shipping">Shipping</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="lore-eyebrow" style="color: var(--lore-stone);">Follow</p>
+      <ul class="lore-list-reset lore-copy">
+        <li><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+        <li><a href="https://tiktok.com" target="_blank" rel="noreferrer">TikTok</a></li>
+        <li><a href="https://pinterest.com" target="_blank" rel="noreferrer">Pinterest</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="lore-container lore-footer__bottom">
+    <span>© {{ "now"|date("Y") }} {{ store.name ?: 'LORE' }}. All rights reserved.</span>
+    <span>{{ trans('lore.tagline') ?: 'Cinematic accessories' }}</span>
+  </div>
+</footer>

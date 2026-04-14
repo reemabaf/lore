@@ -1,0 +1,27 @@
+{% extends 'layouts/master.twig' %}
+
+{% block title %}Brands{% endblock %}
+
+{% block content %}
+  <section class="lore-section">
+    <div class="lore-container lore-surface lore-product-info">
+      {% component breadcrumbs %}
+      <h1 class="lore-section-title">Brands</h1>
+      <p class="lore-copy">This theme file is ready for Salla brand listing output.</p>
+      {% if brands %}
+        {% for letter, letter_brands in brands %}
+          <div style="margin-top:20px;">
+            <p class="lore-eyebrow">{{ letter }}</p>
+            <div class="lore-grid-3">
+              {% for brand in letter_brands %}
+                <article class="lore-mini-card">
+                  <h2 class="lore-card-title" style="font-size: 28px;">{{ brand.name }}</h2>
+                </article>
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </section>
+{% endblock %}

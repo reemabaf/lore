@@ -1,0 +1,7 @@
+<svg width="800" height="900" viewBox="0 0 800 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="900" fill="#F7F0E8"/>
+  <circle cx="260" cy="330" r="130" fill="#4A235D"/>
+  <circle cx="520" cy="540" r="150" fill="#EED7C4"/>
+  <text x="150" y="680" fill="#4A235D" font-size="52" font-family="Georgia, serif">Collector</text>
+  <text x="150" y="740" fill="#4A235D" font-size="52" font-family="Georgia, serif">Edition</text>
+</svg>

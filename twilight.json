@@ -1,0 +1,27 @@
+{
+  "name": {
+    "ar": "لور",
+    "en": "LORE"
+  },
+  "repository": "https://github.com/reemabaf/new-theme",
+  "author_email": "hello@example.com",
+  "features": [
+    "filters"
+  ],
+  "settings": [
+    {
+      "type": "boolean",
+      "label": "شريط علوي داكن",
+      "id": "topnav_is_dark",
+      "format": "switch",
+      "selected": false
+    },
+    {
+      "type": "string",
+      "id": "placeholder",
+      "format": "hidden",
+      "value": "images/favicon.svg"
+    }
+  ],
+  "components": []
+}
